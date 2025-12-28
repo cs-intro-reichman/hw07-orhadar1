@@ -19,11 +19,6 @@ public class Binomial {
 	
 	// Computes the Binomial function, efficiently
 	public static int binomial(int n, int k) {
-		
-		
-		
-		
-		
 		//// This function creates a 2D array, say memo, 
 		//// and then initializes all its elements to -1.
 		//// It then calls binomial(n, k, memo), which does all the heavy lifiting.
