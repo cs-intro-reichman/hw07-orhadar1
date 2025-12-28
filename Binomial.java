@@ -36,12 +36,12 @@ public class Binomial {
     if (k > n) return 0;
     if (k == 0 || n == 0) return 1;
 
-    if (memo[n][k] != -1L) return memo[n][k];
+    if (memo[n][k] != -1) return memo[n][k];
 
     memo[n][k] = binomial(n - 1, k, memo) + binomial(n - 1, k - 1, memo);
     return memo[n][k];
 }
-	
+
 }
 
 
