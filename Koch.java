@@ -38,8 +38,11 @@ public class Koch {
    
     public static void snowFlake(int n) {
      
-        StdDraw.setYscale(0, 1.1);
-        StdDraw.setXscale(0, 1.1);
+       	StdDraw.setXscale(0.0, 1.1);
+		StdDraw.setYscale(-0.20, 1.1);
+
+
+
 
 
         double x1 = 0.1, y1 = 0.1;
@@ -47,8 +50,10 @@ public class Koch {
         double x3 = 0.55, y3 = 0.1 + (0.9 * Math.sqrt(3) / 2.0);
 
        
-        curve(n, x1, y1, x2, y2);
-        curve(n, x2, y2, x3, y3);
-        curve(n, x3, y3, x1, y1);
-    }
+        curve(n, x1, y1, x3, y3);
+		curve(n, x3, y3, x2, y2);
+		curve(n, x2, y2, x1, y1);
+
+	}
+	
 }
